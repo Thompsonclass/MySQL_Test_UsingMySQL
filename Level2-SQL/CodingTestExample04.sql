@@ -8,8 +8,14 @@ A379998 	Dog	        2013-10-23 11:42:00	Normal	            Disciple	Intact Male
 A370852	    Dog	        2013-11-03 15:04:00	Normal	            Katie	    Spayed Female
 A403564 	Dog	        2013-11-18 17:03:00	Normal	            Anna	    Spayed Female
 
+# 가장 최근에 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요.
+# 가장 늦게 들어온 동물은 Anna이고, Anna는 2013-11-18 17:03:00에 들어왔습니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.
+
+시간
+2013-11-18 17:03:00
+
 -- 코드를 입력하세요
-SELECT MIN(Datetime) AS 시간
+SELECT MAX(Datetime) AS 시간
 # Datetime의 최대값을 구하기 위해 MAX 사용 AS는 해당 Datetime가 어떤 정보인지를 나타냄
 
 FROM Animal_ins

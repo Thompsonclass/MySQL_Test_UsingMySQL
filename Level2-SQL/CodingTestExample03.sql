@@ -8,6 +8,12 @@ A379998 	Dog	        2013-10-23 11:42:00	Normal	            Disciple	Intact Male
 A370852	    Dog	        2013-11-03 15:04:00	Normal	            Katie	    Spayed Female
 A403564 	Dog	        2013-11-18 17:03:00	Normal	            Anna	    Spayed Female
 
+# 동물 보호소에 가장 먼저 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요.
+# 가장 먼저 들어온 동물은 Jack이고, Jack은 2013-10-14 15:38:00에 들어왔습니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.
+
+시간
+2013-10-14 15:38:00
+
 -- 코드를 입력하세요
 SELECT MIN(Datetime) AS 시간
 # Datetime의 최소값을 구하기 위해 MIN 사용 AS는 해당 Datetime가 어떤 정보인지를 나타냄
